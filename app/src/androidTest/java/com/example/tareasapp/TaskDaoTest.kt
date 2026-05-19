@@ -47,7 +47,7 @@ class TaskDaoTest {
 
         // Arrange
         val tarea = TaskEntity(
-            titulo = "Comprar pan"
+            titulo = "Comprar pan",
         )
 
         // Act
@@ -69,7 +69,7 @@ class TaskDaoTest {
     fun actualizarTarea() = runTest {
 
         dao.insert(
-            TaskEntity(titulo = "Estudiar")
+            TaskEntity(titulo = "Estudiar",)
         )
 
         val original = dao
@@ -102,7 +102,7 @@ class TaskDaoTest {
     fun borrarTarea() = runTest {
 
         dao.insert(
-            TaskEntity(titulo = "Algo")
+            TaskEntity(titulo = "Algo",)
         )
 
         val tarea = dao

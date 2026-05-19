@@ -10,5 +10,5 @@ data class TaskEntity(
     val id: Int = 0,
     val titulo: String,
     val completado: Boolean = false,
-    val creado_en: Long = System.currentTimeMillis()
+    val creado_en: Long = System.currentTimeMillis(),
 )
